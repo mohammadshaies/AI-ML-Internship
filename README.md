@@ -15,3 +15,9 @@ My AI/ML Engineering internship tasks for Developers Hub.
 * **Dataset used:** Real-time Yahoo Finance data (AAPL) retrieved using the `yfinance` library.
 * **Models applied:** Linear Regression (using `scikit-learn`).
 * **Key results and findings:** The model successfully tracked the general price trends of the stock. However, visualizing the actual vs. predicted prices revealed a slight lag during sudden market shifts, demonstrating the limitations of basic linear regression in highly volatile time-series environments.
+
+## Task 5: Mental Health Support Chatbot (LLM Fine-Tuning)
+* **Task objective:** Train a Large Language Model to respond to user prompts with empathy.
+* **Dataset used:** A subset of the Facebook 'Empathetic Dialogues' dataset (via Hugging Face).
+* **Models applied:** DistilGPT2 (Fine-tuned using `transformers` and `torch`).
+* **Key results and findings:** Successfully fine-tuned the model locally. The AI learned to replicate the structural pattern of the conversational data. However, training on a heavily reduced dataset (500 rows, 1 epoch) demonstrated that while structural alignment is fast, achieving deep semantic empathy requires processing the full dataset over multiple epochs with accelerated hardware.
